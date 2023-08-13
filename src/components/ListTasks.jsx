@@ -49,7 +49,7 @@ const Section = ({status, tasks, setTasks, todos, inProgress, closed}) => {
         drop: (item) => addItemToSection(item.id),
         collect: (monitor) => ({
             isOver: !!monitor.isOver()
-        }),
+        })
     }));
     
     // set up header variable styles
@@ -140,7 +140,7 @@ const Task = ({task, tasks, setTasks}) => {
             ref = {drag} 
             className={`relative pt-4 mt-8 shadow-md rounded-md cursor-grab ${isDragging ? "opacity-25" : "opacity-100"}`}
         >
-            <p>{task.name}</p>
+            <p className="pl-4 pb-4">{task.name}</p>
             <button 
                 className="absolute bottom-1 right-1 text-slate-400" 
                 onClick={() => handleRemove(task.id)}
