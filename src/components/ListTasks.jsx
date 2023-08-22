@@ -142,7 +142,7 @@ const Task = ({task, tasks, setTasks}) => {
         >
             <p className="pl-4 pb-4">{task.name}</p>
             <button 
-                className="absolute bottom-1 right-1 text-slate-400" 
+                className="absolute bottom-4 right-1 text-slate-400" 
                 onClick={() => handleRemove(task.id)}
             >
                 <svg 
