@@ -5,27 +5,15 @@ import EmailLogo from '../assets/email.png';
 
 const Footer = () => {
 return (
-	<div 
-        className="bg-slate-400 flex justify-center"
-        style={{width:1024}}
-    >
+	<div className="bg-blue-300 flex justify-center w-screen h-36">
         <a href="https://www.linkedin.com/in/gracetxgao">
-            <img 
-                src={LinkedinLogo} 
-                style={{ width:40}}
-            />
+            <img src={LinkedinLogo} className="w-10 m-12"/>
         </a>
-        <a href="">
-            <img 
-                src={GithubLogo} 
-                style={{ width:40}}
-            />
+        <a href="https://www.linkedin.com/in/gracetxgao">
+            <img src={GithubLogo} className="w-10 m-12"/>
         </a>
-        <a href="">
-            <img 
-                src={EmailLogo} 
-                style={{ width:40}}
-            />
+        <a href="https://www.linkedin.com/in/gracetxgao">
+            <img src={EmailLogo} className="w-10 m-12"/>
         </a>
 	</div>
 );

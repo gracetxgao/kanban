@@ -8,7 +8,11 @@ const LoginButton = () => {
 
     return (
         !isAuthenticated && (
-            <button onClick={() => loginWithRedirect()}>Log In</button>
+            <div>
+                <button className="flex justify-center bg-blue-300 p-3 mt-8 ml-8 rounded-md w-24"
+                onClick={() => loginWithRedirect()}>Log In
+                </button>   
+            </div>          
         )
     );
 };

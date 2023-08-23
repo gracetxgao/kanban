@@ -53,19 +53,19 @@ const Section = ({status, tasks, setTasks, todos, inProgress, closed}) => {
     }));
     
     // set up header variable styles
-    let text = "Todo";
-    let bg = "bg-slate-500";
+    let text = "to-dos";
+    let bg = "bg-red-200";
     let tasksToMap = todos;
 
     if (status === "inprogress") {
-        text = "In Progress";
-        bg = "bg-purple-500";
+        text = "in progress";
+        bg = "bg-yellow-100";
         tasksToMap = inProgress;
     }
 
     if (status === "closed") {
-        text = "Closed";
-        bg = "bg-green-500";
+        text = "completed";
+        bg = "bg-green-200";
         tasksToMap = closed;
     }
 
@@ -106,7 +106,7 @@ const Section = ({status, tasks, setTasks, todos, inProgress, closed}) => {
 const Header = ({text, bg, count}) => {
     // formatting the header... not sure why the variables can't be set up right before this part
     return (
-        <div className={`${bg} flex items-center h-12 pl-4 rounded-md uppercase text-sm text-white`}>
+        <div className={`${bg} flex items-center h-12 pl-4 rounded-md text-sm text-gray-500`}>
            {text}
             <div className="ml-2 bg-white w-5 h-5 flex items-center text-black rounded-full justify-center">
                 {count}
@@ -138,7 +138,7 @@ const Task = ({task, tasks, setTasks}) => {
     return (
         <div 
             ref = {drag} 
-            className={`relative pt-4 mt-8 shadow-md rounded-md cursor-grab ${isDragging ? "opacity-25" : "opacity-100"}`}
+            className={`bg-gray-100 relative pt-4 mt-8 shadow-lg rounded-md cursor-grab ${isDragging ? "opacity-25" : "opacity-100"}`}
         >
             <p className="pl-4 pb-4">{task.name}</p>
             <button 
