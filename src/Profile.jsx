@@ -6,7 +6,6 @@ import LiveClockUpdate from "./components/LiveClockUpdate";
 
 const Profile = () => {
     const date = moment().format("dddd MMM DD YYYY")
-    const day = moment().day()
 
     const { user, isAuthenticated, isLoading } = useAuth0();
 
