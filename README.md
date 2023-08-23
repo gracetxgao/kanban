@@ -1,9 +1,10 @@
-private kanban board
-all logging in does right now is displaying your name
+### H3
+Description
 
-# TODO
-actually make it so that different users can access their own tasks across different devices
-stop using localstorage and instead use something else
+A kanban board to organize your tasks. Features a login function made using the authentication module **Auth0**.
 
-future project:
-kanban board using MERN stack
+### H3
+All tools and technologies used
+
+React.js, Node.js, Vite.js, Auth0, TailwindCSS, React Hot Toast, React Beautiful DnD
+Javascript, HTML, CSS
